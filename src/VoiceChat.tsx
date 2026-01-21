@@ -28,7 +28,7 @@ const VoiceChat = () => {
       formData.append("audio", audioBlob, "input.wav");
 
       try {
-        const res = await fetch("http://localhost:8000/voice-chat", {
+        const res = await fetch("https://sindhi-bot-backend.onrender.com/voice-chat", {
           method: "POST",
           body: formData,
         });
